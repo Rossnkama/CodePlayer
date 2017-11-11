@@ -1,0 +1,97 @@
+body {
+
+    padding: 0px;
+    overflow: hidden;
+
+}
+
+* {
+
+    font-family: monospace;
+
+}
+
+.nav-bar {
+
+    background-color: rgb(108, 184, 231);
+
+}
+
+#the-title {
+
+    margin-right: 27.3%;
+    margin-left: 1.5%;
+    margin-top: 0.3%;
+    color: white;
+
+}
+
+.buttons {
+
+    margin-top: 0.5%;
+    position: relative;
+    left: 2.41%;
+
+}
+
+button {
+
+    border: 0px solid black;
+    height: 75%;
+    width: 90px;
+    border-radius: 5px;
+
+}
+
+.active {
+
+    background-color: #E8F2FF;
+
+}
+
+.highlightedButton {
+
+    background-color: lightgrey;
+
+}
+
+.html {
+
+    background-color: white;
+
+}
+
+.output {
+
+    background-color: white;
+
+}
+
+textarea {
+
+    border-top: none;
+    border-color: grey;
+
+}
+
+.panel {
+
+    float: left;
+    width: 50%;
+    border-left: none;
+    resize: none;
+
+}
+
+iframe {
+
+    border: none;
+
+}
+
+.hidden {
+
+    column-span: none;
+    display: none;
+
+}

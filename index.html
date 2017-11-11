@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code Player</title>
+        <meta charset="UTF-8">
+        <link href="main.css" rel="stylesheet">
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+        <!--jquery-3 and bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+        <!--Syntax highlighting-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+
+        <!--Load syntax highlighting-->
+        <script>
+            initHighlightingOnLoad();
+        </script>
+    </head>
+    <body onload="updateOutput()">
+
+        <div class="container-fluid nav-bar">
+            <div class="row nav-bar-next">
+                <h2 id="the-title">Code player</h2>
+                <div class="buttons">
+                    <button id="html" class="active button">HTML</button>
+                    <button id="css" class="button">CSS</button>
+                    <button id="javascript" class="button">Javascript</button>
+                    <button id="output" class="active button">Output</button>
+                </div>
+            </div>
+        </div> 
+
+        <div id="bodyContainer">
+
+            <!--pre><code--><textarea placeholder="Type HTML code here" id="html-panel" class="panel"><p id="paragraph">Hello World!</p><p>Check the javascript if you're confused :)</p></textarea><!--/code></pre-->
+
+            <!--pre><code--><textarea placeholder="Type CSS here" id="css-panel" class="panel hidden">p{color: darkgrey;} *{font-family: helvetica; padding: 5px;}</textarea><!--/code></pre-->
+
+            <!--pre><code--><textarea placeholder="Type Javascript here" id="javascript-panel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Made by Ross.N";</textarea><!--/code></pre-->
+
+            <iframe id="output-panel" class="panel"></iframe>
+
+        </div>
+
+    </body>
+
+    <script src="script.js" charset="utf-8"></script>
+
+</html>
